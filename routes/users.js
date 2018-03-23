@@ -147,7 +147,7 @@ userRoutes.put('/api/users/:id', (req, res, next) => {
 });
 
 // delete User
-userRoutes.delete("/api/user/:id", (req, res, next) => {
+userRoutes.delete("/api/users/:id", (req, res, next) => {
   if (!req.user) {
     res.status(401).json({ message: "Log in to delete the user." });
     return;
